@@ -121,7 +121,7 @@ class HomeScreen extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         SizedBox(
-                            height: 55,
+                            height: 50,
                             width: size.width * 0.75,
                             child: TypeAheadField(
                               hideOnLoading: true,

@@ -351,7 +351,7 @@ class _TranslateScreenState extends State<TranslateScreen> {
           text: const TextSpan(
             children: <TextSpan>[
               TextSpan(
-                  text: 'Go ',
+                  text: 'Kamus ',
                   style: TextStyle(
                       fontSize: 18,
                       color: Color(0xFF121212),
@@ -372,11 +372,32 @@ class _TranslateScreenState extends State<TranslateScreen> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
+              Center(
+                child: Padding(
+                  padding: const EdgeInsets.all(10.0),
+                  child: Container(
+                    width: 250,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(10.0),
+                      color: Colors.red[400],
+                    ),
+                    child: FlatButton(
+                      onPressed: () {
+                        trans();
+                      },
+                      child: const Text("Translate",
+                          style: TextStyle(
+                              color: Colors.white, fontFamily: 'PoppinsBold')),
+                    ),
+                  ),
+                ),
+              ),
               Padding(
                 padding: const EdgeInsets.all(10.0),
                 child: Container(
                   width: MediaQuery.of(context).size.width,
-                  height: MediaQuery.of(context).size.height / 3.5,
+                  // height: MediaQuery.of(context).size.height / 3.5,
+                  height: 150,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10.0),
                     color: Color(0xFF121212),
@@ -434,7 +455,8 @@ class _TranslateScreenState extends State<TranslateScreen> {
                 padding: const EdgeInsets.all(10.0),
                 child: Container(
                   width: MediaQuery.of(context).size.width,
-                  height: MediaQuery.of(context).size.height / 3.5,
+                  height: 150,
+                  // height: MediaQuery.of(context).size.height / 3.5,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10.0),
                     color: Colors.blue[400],
@@ -457,26 +479,26 @@ class _TranslateScreenState extends State<TranslateScreen> {
                   ),
                 ),
               ),
-              Center(
-                child: Padding(
-                  padding: const EdgeInsets.all(10.0),
-                  child: Container(
-                    width: double.infinity,
-                    decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(10.0),
-                      color: Colors.red[400],
-                    ),
-                    child: FlatButton(
-                      onPressed: () {
-                        trans();
-                      },
-                      child: const Text("Translate",
-                          style: TextStyle(
-                              color: Colors.white, fontFamily: 'PoppinsBold')),
-                    ),
-                  ),
-                ),
-              ),
+              // Center(
+              //   child: Padding(
+              //     padding: const EdgeInsets.all(10.0),
+              //     child: Container(
+              //       width: 250,
+              //       decoration: BoxDecoration(
+              //         borderRadius: BorderRadius.circular(10.0),
+              //         color: Colors.red[400],
+              //       ),
+              //       child: FlatButton(
+              //         onPressed: () {
+              //           trans();
+              //         },
+              //         child: const Text("Translate",
+              //             style: TextStyle(
+              //                 color: Colors.white, fontFamily: 'PoppinsBold')),
+              //       ),
+              //     ),
+              //   ),
+              // ),
             ],
           ),
         ),

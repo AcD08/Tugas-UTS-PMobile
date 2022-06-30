@@ -19,5 +19,5 @@ class Strings {
   //api links
   static const searchAPIUrl = 'https://api.dictionaryapi.dev/api/v2/entries/en/';
   static const dataAPTUrl = 'https://api.datamuse.com/sug?s=';
-  static const quoteAPIUrl = 'https://quotable.io/random';
+  static const quoteAPIUrl = 'https://api.quotable.io/random';
 }
